@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.salary-calculator-card,
+.salary-results-card {
+  border: 0.5px solid black;
+  padding: 20px;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.salary-calculator-card {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 60px;
+  left: 128px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(56, 38, 38);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.salary-results-card {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 60px;
+  left: 832px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(56, 38, 38);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.salary-calculator-title {
+  margin-left: 20px;
+}
+
+.salary-calculator-subtitle {
+  margin-left: 40px;
+}
+
+.salary-calculator-description {
+  font-size: 14px;
+  color: #6c6a6a;
+  margin-left: 40px;
+}
+
+.salary-calculator-form-group {
+  margin: 20px;
+}
+
+.salary-calculator-label {
+  margin-left: 40px;
+}
+
+.salary-calculator-input {
+  margin-left: 40px;
+  height: 30px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.salary-calculator-list-item {
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.salary-calculator-delete-button {
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.salary-calculator-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.salary-calculator-add-button {
+  border: none;
+  background-color: transparent;
+  color: blue;
+  margin-left: 40px;
+}
+
+.salary-calculator-reset-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: transparent;
+  color: blue;
+  display: flex;
+  align-items: center;
+}
+
+.salary-calculator-results {
+  padding: 20px;
+}
+
+.salary-calculator-results-header {
+  display: flex;
+  justify-content: space-between;
+  color: #6c6a6a;
+}
+
+.salary-calculator-result-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.salary-calculator-bordered {
+  border: 1px solid #6c6a6a;;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.salary-calculator-float-right {
+  float: right;
 }
